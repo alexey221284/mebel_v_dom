@@ -11,9 +11,12 @@
     <link rel="stylesheet" href="css/style.bundle.css" />
     <link rel="stylesheet" href="css/style.bundle.css" />
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<f71b9685-f7e8-4d1a-bb05-26ca9873d16f>" type="text/javascript"></script>   
     <script src="js/bundle.js" defer="defer"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="js/main.js"></script>
+  
   </head>
   <body>
     <div class="header">
@@ -196,9 +199,9 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-12">-->
-            <div class="main_map">
-              <img class="main_map_img" src="img/contacts_map.png">
-            </div>
+          <div class="main_map">
+            <div id="map" ></div>
+          </div>
           <!--</div>                   
         </div>
       </div>
