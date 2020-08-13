@@ -66,3 +66,80 @@
     position: relative;
     margin-left: 16px;
 }
+
+.main_map {
+    margin-top: 71px;
+}
+
+.main_form {
+    position: absolute;
+    right: 10%;
+    top: 493px;
+    background: #FFFFFF;
+    width: 555px;
+}
+
+.form_wrapper {
+    display: flex;
+    flex-direction: column;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #A6A6A6;
+}
+
+.form_adres {
+    margin: 60px 0 0 68px;
+    width: 390px;
+}
+
+.form_email, .form_phone {
+    margin: 14px 0 0 68px;
+    width: 390px;
+}
+
+.form_info {
+    margin: 56px 0 0 68px;
+    width: 390px;
+}
+
+.form_wrapper input{
+    border: 0;
+    border-bottom: 1px solid #444444;
+    width: 390px;
+    margin: 22px 0 0 68px;
+}
+
+.form_text {
+    resize: none;
+    border-style: none;
+    outline: none;
+    border-bottom: 1px solid #444444;
+    margin: 22px 0 0 68px;
+    width: 390px;
+}
+
+.agree {
+    margin: 15px 0 0 68px;
+    width: 390px;
+}
+
+.form_button {
+    width: 165px;
+    height: 44px;
+    background: #737F8A;
+    border: 0;
+    margin: 19px 0 0 68px;
+}
+
+.form_button span {
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
