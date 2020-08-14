@@ -11,12 +11,10 @@
     <link rel="stylesheet" href="css/style.bundle.css" />
     <link rel="stylesheet" href="css/style.bundle.css" />
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<f71b9685-f7e8-4d1a-bb05-26ca9873d16f>" type="text/javascript"></script>   
+    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <script src="js/bundle.js" defer="defer"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
-    <script src="js/main.js"></script>
-  
   </head>
   <body>
     <div class="header">
@@ -169,46 +167,201 @@
         </div>
       </div>
     </div>
-
+    
     <div class="breadcrumbs">
       <div class="container">
         <div class="row">
           <div class="col-xl-12">
             <div class="breadcrumbs_block">
-              <span class="breadcrumbs_text">Главная \ Контакты </span>
+              <span class="breadcrumbs_text">Главная\ Каталог \ Стул КАПРИ 1</span>
             </div>
           </div>
         </div>
       </div>
+    </div>    
+
+    <div class="main_product">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6"><img class="product_img" src="img/product_img.png"></div>
+          <div class="col-xl-6">
+            <div class="head_title_block">
+              <h1 >Стул <span>капри 1</span></h1>
+              <p>Артикул: 123456</p>
+            </div>
+            <div class="sale_block">
+              <span>9 690 <i class="fa fa-rouble"></i></span><span class="grey old-price"> 10 590 <i class="fa fa-rouble"></i></span>
+            </div>
+            <div class="size">
+              <p>Размер: <span>70 х 65 85 см</span></p>
+            </div>
+            
+            <div class="color_wrapper">
+              <span>Цвет:</span>
+              <div class="color color1"></div>
+              <div class="color color2"></div>
+              <div class="color color3"></div>
+              <div class="color color4"></div>
+              <div class="color color5"></div>
+            </div>
+
+            <div class="color_name">
+              <span>темно-серый</span>
+            </div>
+
+            <div class="button_wrapper1">
+              <button class="btn_showroom">Шоурум</button>
+              <button class="btn_sklad">На складе</button>
+                <div class="sklad_text">
+                  <img src="img/sklad_icon.png"><span>на складе: много</span>
+                </div>
+            </div>
+
+            <div class="button_wrapper2">
+              <div class="block_counter">
+                <span>-</span>
+                <p>10</p>
+                <span>+</span>
+              </div>
+              <button class="btn_cart">В корзину</button>
+              <button class="btn_credit">Купить в кредит</button>
+            </div>
+
+            <div class="option_wrapper">
+              <div class="option_item">Доставка и оплата</div>
+              <div class="option_item">Характеристика</div>
+              <div class="option_item">Описание</div>
+            </div>
+
+            <div class="info">
+              <p>Доставка, подъём: <span>300р.</span> (при наличии исправно работающего лифта)</p>
+              <p>При отсутствии лифта: <span>100р.\ этаж</span></p>
+            </div>
+
+          </div>            
+        </div>
+      </div>
     </div>
-    
-    <div class="main">
+
+
+    <!--
+
+
+    <div class="sale">
       <div class="container">
         <div class="row">
           <div class="col-xl-12">
             <div class="position-relative">
-              <div class="main_title"><span class="main_title_text">Контакты</span></div>              
+              <div class="sale-title"><p>Акции</p></div>
+              <div class="sale-line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4">
+            <div class="sale-block">
+              <div class="sale-block__img"><img src="img/sale1.jpg" alt="" /></div>
+              <a class="sale-block__more"><span>Подробнее</span> <img src="img/next.svg" alt="" /></a>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <div class="sale-block">
+              <div class="sale-block__img"><img src="img/sale2.jpg" alt="" /></div>
+              <a class="sale-block__more"><span>Подробнее</span> <img src="img/next.svg" alt="" /></a>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <div class="sale-block">
+              <div class="sale-block__img"><img src="img/sale3.jpg" alt="" /></div>
+              <a class="sale-block__more"><span>Подробнее</span> <img src="img/next.svg" alt="" /></a>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-
-    <!--<div class="main_map">
+    <div class="catalog">
       <div class="container">
         <div class="row">
-          <div class="col-xl-12">-->
-          <div class="main_map">
-            <div id="map" ></div>
+          <div class="col-xl-12">
+            <div class="position-relative">
+              <div class="sale-title"><p>Каталог мебели</p></div>
+              <div class="sale-line"></div>
+            </div>
           </div>
-          <!--</div>                   
+        </div>
+        <div class="grid-catalog">
+          <div class="grid-catalog-8">
+            <div class="grid-catalog__row">
+              <div class="block__col-8 block-col p-0">
+                <div class="catalog-block">
+                  <img src="img/catalog1.jpg" alt="" />
+                  <div class="catalog-block__content">
+                    <div class="catalog-block__title"><p>Кухонные столы</p></div>
+                    <div class="catalog-block__price"><p>От 8 000 руб.</p></div>
+                    <div class="catalog-block__more">
+                      <a href="index.html#"><span>Подробнее</span> <img src="img/line.svg" alt="" /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block__col-4 block-col p-0">
+                <div class="catalog-block">
+                  <img src="img/catalog2.jpg" alt="" />
+                  <div class="catalog-block__content content-right">
+                    <div class="catalog-block__title"><p>Стулья</p></div>
+                    <div class="catalog-block__price"><p>От 1000 руб.</p></div>
+                    <div class="catalog-block__more">
+                      <a href="index.html#"><span>Подробнее</span> <img src="img/line.svg" alt="" /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-catalog__row">
+              <div class="block__col-6 block-col p-0">
+                <div class="catalog-block">
+                  <img src="img/catalog3.jpg" alt="" />
+                  <div class="catalog-block__content content-right">
+                    <div class="catalog-block__title"><p>Кухонные уголки</p></div>
+                    <div class="catalog-block__price"><p>От 4500 руб.</p></div>
+                    <div class="catalog-block__more">
+                      <a href="index.html#"><span>Подробнее</span> <img src="img/line.svg" alt="" /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block__col-6 block-col p-0">
+                <div class="catalog-block">
+                  <img src="img/catalog4.jpg" alt="" />
+                  <div class="catalog-block__content">
+                    <div class="catalog-block__title"><p>Офисные кресла</p></div>
+                    <div class="catalog-block__price"><p>От 3 000 руб.</p></div>
+                    <div class="catalog-block__more">
+                      <a href="index.html#"><span>Подробнее</span> <img src="img/line.svg" alt="" /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-catalog-4">
+            <div class="block__col-20 block-col p-0">
+              <div class="catalog-block">
+                <img src="img/catalog5.jpg" alt="" />
+                <div class="catalog-block__content">
+                  <div class="catalog-block__title"><p>Предметы интерьера</p></div>
+                  <div class="catalog-block__price"><p>От 1 000 руб.</p></div>
+                  <div class="catalog-block__more">
+                    <a href="index.html#"><span>Подробнее</span> <img src="img/line.svg" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>-->
-
-
-    <!--<div class="idea">
+    </div>
+    <div class="idea">
       <div class="container">
         <div class="row">
           <div class="col-xl-12">
@@ -408,21 +561,6 @@
         </div>
       </div>
     </div>-->
-
-    <div class="main_form">             
-      <p class="form_adres">Наш адрес: <span class="grey">г. Саратов, ул Симбирская, 154 ТЦ Мебель Сити</span></p>
-        <p class="form_email">E-mail: <a href="mailto:mkmebelvdom@yandex.ru">mkmebelvdom@yandex.ru</a></p>
-          <p class="form_phone">Телефон: <a href="tel:+78452987890">7 (8452) 98-78-90</a></p>
-            <p class="form_info">Если у Вас остались вопросы, то можете связаться с нами</p> 
-              <div class="form_wrapper">            
-                <input type="text" name="form_name" id="form_name" placeholder="Ваше имя">
-                  <input type="email" name="form_email" id="form_email" placeholder="Ваш e-mail">
-                    <input type="text" name="form_theme" id="form_theme" placeholder="Тема сообщения">
-                      <textarea class="form_text" id="form_text" placeholder="Сообщение"></textarea>              
-                      <p class="agree">Нажимая кнопку “отправить” Вы даете согласие на обработку своих <a href="#">персональных данных</a>.</p>
-                        <button class="form_button" type="submit"><span>Отправить</span></button>
-                      </div>
-                    </div>
 
 
     <div class="footer">
