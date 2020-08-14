@@ -136,7 +136,7 @@
     height: 44px;
     background: #737F8A;
     border: 0;
-    margin: 19px 0 0 68px;
+    margin: 19px 0 52px 68px;
 }
 
 .form_button span {
@@ -148,7 +148,7 @@
     color: #FFFFFF;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 360px) {
     .main_form {
         position: absolute;        
         top: 615px;
@@ -211,5 +211,147 @@
 
     .footer {
         margin-top: 580px;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 400px) {
+    .main_form {
+        position: absolute;        
+        top: 615px;
+        background: #FFFFFF;
+        width: 100%;
+        right: 0;
+    }
+    .main_map {
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+    #map {
+        height: 250px;
+    }
+
+    .form_adres {
+        margin: 60px 0 0 10px;
+        width: 355px;
+    }
+    
+    .form_email, .form_phone {
+        margin: 14px 0 0 10px;
+        width: 355px;
+    }
+    
+    .form_info {
+        margin: 56px 0 0 10px;
+        width: 355px;
+    }
+    
+    .form_wrapper input{
+        border: 0;
+        border-bottom: 1px solid #444444;
+        width: 355px;
+        margin: 22px 0 0 10px;
+    }
+    
+    .form_text {
+        resize: none;
+        border-style: none;
+        outline: none;
+        border-bottom: 1px solid #444444;
+        margin: 22px 0 0 10px;
+        width: 355px;
+    }
+    
+    .agree {
+        margin: 15px 0 0 10px;
+        width: 355px;
+    }
+    
+    .form_button {
+        width: 165px;
+        height: 44px;
+        background: #737F8A;
+        border: 0;
+        margin: 19px 0 0 10px;
+    }
+
+    .footer {
+        margin-top: 580px;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 480px) {
+    .main_form {
+        position: absolute;        
+        top: 615px;
+        background: #FFFFFF;
+        width: 100%;
+        right: 0;
+    }
+    .main_map {
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+    #map {
+        height: 250px;
+    }
+
+    .form_adres {
+        margin: 60px 0 0 15px;
+        width: 380px;
+    }
+    
+    .form_email, .form_phone {
+        margin: 14px 0 0 15px;
+        width: 380px;
+    }
+    
+    .form_info {
+        margin: 56px 0 0 15px;
+        width: 380px;
+    }
+    
+    .form_wrapper input{
+        border: 0;
+        border-bottom: 1px solid #444444;
+        width: 380px;
+        margin: 22px 0 0 15px;
+    }
+    
+    .form_text {
+        resize: none;
+        border-style: none;
+        outline: none;
+        border-bottom: 1px solid #444444;
+        margin: 22px 0 0 15px;
+        width: 380px;
+    }
+    
+    .agree {
+        margin: 15px 0 0 15px;
+        width: 380px;
+    }
+    
+    .form_button {
+        width: 165px;
+        height: 44px;
+        background: #737F8A;
+        border: 0;
+        margin: 19px 0 0 15px;
+    }
+
+    .footer {
+        margin-top: 580px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .main_form {
+    position: absolute;
+    right: 10%;
+    top: 615px;
+    background: #FFFFFF;
+    width: 555px;
     }
 }
