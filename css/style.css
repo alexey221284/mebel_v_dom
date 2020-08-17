@@ -407,6 +407,7 @@ a, a:visited, a:hover, a:focus, .grey {
 
 .old-price {
     margin-left: 26px;
+    text-decoration: line-through;
 }
 
 .size {
