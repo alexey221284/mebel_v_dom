@@ -673,7 +673,7 @@ a, a:visited, a:hover, a:focus, .grey {
     flex-direction: column;    
 }
 
-.similar_products_item_wrapper img {
+.similar_products_item_wrapper_img {
     max-width: 128px;
     margin-left: 62px;
 }
@@ -716,6 +716,7 @@ a, a:visited, a:hover, a:focus, .grey {
 }
 
 .btn_cart_img {
+    position: relative;
     width: 37px;
     height: 38px;
     background: #444444;
@@ -723,8 +724,5 @@ a, a:visited, a:hover, a:focus, .grey {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.btn_cart_img img {
-    background: black;   
+    margin: -40px 16px 0 209px;
 }
