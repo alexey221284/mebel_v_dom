@@ -367,6 +367,15 @@ a, a:visited, a:hover, a:focus, .grey {
     margin-top: 91px;
 }
 
+.search_icon_img {
+    margin-left: 514px;
+    margin-top: -50px;
+}
+
+.search_icon_img:hover {
+    cursor: pointer;
+}
+
 .head_title_wrapper {
     display: flex;
     justify-content: center;
@@ -444,29 +453,46 @@ a, a:visited, a:hover, a:focus, .grey {
 }
 
 .color {
+    width: 28px;
+    height: 28px;
+    margin-right: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color1:hover, .color2:hover, .color3:hover, .color4:hover, .color5:hover {
+    border: 1px solid #FD8D13;
+}
+
+.color1in {
+    background-color: #2C1313;
     width: 20px;
     height: 20px;
-    margin-right: 12px;
 }
 
-.color1 {
-    background-color: #2C1313;
-}
-
-.color2 {
+.color2in {
     background-color: #C4C4C4;
+    width: 20px;
+    height: 20px;
 }
 
-.color3 {
+.color3in {
     background-color: #FFD1A0;
+    width: 20px;
+    height: 20px;
 }
 
-.color4 {
+.color4in {
     background-color: #D8DBEC;
+    width: 20px;
+    height: 20px;
 }
 
-.color5 {
+.color5in {
     background-color: #BABCC5;
+    width: 20px;
+    height: 20px;
 }
 
 .color:hover {
@@ -588,8 +614,8 @@ a, a:visited, a:hover, a:focus, .grey {
     font-size: 18px;
     line-height: 22px;
     color: #444444;
-    border: 0;
-    margin-left: 15px;
+    margin-left: 15px;  
+    background: #fff;  
 }
 
 .option_wrapper {
