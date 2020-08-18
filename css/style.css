@@ -810,6 +810,11 @@ a, a:visited, a:hover, a:focus, .grey {
         max-width: 380px;
     }
 
+    .search_icon_img {
+        margin-left: 300px;
+        margin-top: -50px;
+    }
+
     .sale_block {
         margin-top: 200px;
     }
@@ -1005,6 +1010,11 @@ a, a:visited, a:hover, a:focus, .grey {
         max-width: 345px;
     }
 
+    .search_icon_img {
+        margin-left: 300px;
+        margin-top: -50px;
+    }
+
     .sale_block {
         margin-top: 200px;
     }
@@ -1045,6 +1055,14 @@ a, a:visited, a:hover, a:focus, .grey {
         flex-wrap: wrap;
     }
 
+    .btn_showroom, .btn_sklad {
+        padding: 0;
+    }
+
+    .btn_sklad {
+        width: 85px;
+    }
+
     .sklad_text {
         margin-left: -5px;
         margin-top: 18px;
@@ -1058,6 +1076,8 @@ a, a:visited, a:hover, a:focus, .grey {
     .block_counter, .btn_cart, .btn_credit {
         margin-left: 0;
         margin-top: 15px;
+        padding: 0;
+        width: 170px;
     }
 
     .option_wrapper {        
@@ -1201,6 +1221,11 @@ a, a:visited, a:hover, a:focus, .grey {
     .product_img {
         margin-top: 110px;
         max-width: 290px;
+    }
+
+    .search_icon_img {
+        margin-left: 240px;
+        margin-top: -50px;
     }
 
     .sale_block {
