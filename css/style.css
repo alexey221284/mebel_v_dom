@@ -786,7 +786,7 @@ a, a:visited, a:hover, a:focus, .grey {
     display: none;
 }
 
-@media (min-width: 400px) and (max-width: 414px) {
+@media (min-width: 400px) and (max-width: 425px) {
     .similar_off {
         display: none;
     }
