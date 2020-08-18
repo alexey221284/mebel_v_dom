@@ -1909,3 +1909,7 @@ a, a:visited, a:hover, a:focus, .grey {
 .insta_foto {
     margin-top: 24px;
 }
+
+.insta_foto:hover {
+    cursor: pointer;
+}
