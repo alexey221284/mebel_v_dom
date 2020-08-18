@@ -1792,3 +1792,19 @@ a, a:visited, a:hover, a:focus, .grey {
         margin-top: 78px;
     }
 }
+
+/******** sale.html ***********/
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .sale-block__more {
+        max-width: 360px;        
+    }
+
+    .sale-block {
+        margin-left: 186px;
+        margin-top: 4px;    
+    }
+}
+
+
+
