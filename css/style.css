@@ -1822,6 +1822,7 @@ a, a:visited, a:hover, a:focus, .grey {
 
 .mini_menu a:hover {
     color: #000;
+    text-decoration: none;
 }
 
 .main_block_wrapper_about {
@@ -1911,5 +1912,162 @@ a, a:visited, a:hover, a:focus, .grey {
 }
 
 .insta_foto:hover {
+    cursor: pointer;
+}
+
+/*********** about-company.html *************/
+
+.about_active a{
+    color: #444444;
+}
+
+.about_text3 {
+    margin-top: 48px;
+}
+
+.about_text3 span {
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #444444;
+}
+
+.about_text3 img {
+    max-width: 262px; 
+}
+
+.about_logo {
+    display: flex;
+    justify-content: center;
+}
+
+.about_text4 {
+    margin-top: 15px;
+}
+
+.about_text4 span {
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #444444;
+}
+
+/********** about-news.html **************/
+
+.about_gallary {
+    margin-top: 60px;
+}
+
+.about-news_line {
+    margin-bottom: 67px;
+}
+
+.about_filter p {
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #444444;
+}
+
+.about_filter label {
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #444444;
+}
+
+.about_filter label:hover {
+    cursor: pointer;
+}
+
+.about_filter form {
+    margin-top: 28px;
+}
+
+.about_text_news {
+    margin-top: -240px;
+    margin-left: 20px;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+.about_text_date {
+    margin-top: 108px;
+    margin-left: 20px;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.about_text_desc {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.about_foto_hover {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+.pagination_wrapper {
+    margin-top: 57px;    
+    display: flex;
+    justify-content: center;
+}
+
+.pagination_block {
+    display: flex;
+    flex-direction: row;
+}
+
+.pagination_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 39px;
+    height: 34px;
+    border: 1px solid #737F8A;
+    box-sizing: border-box;
+    color: #000000;
+    font-size: 14px;
+}
+
+.pi_active {
+    color: #FFFFFF;
+    background: #737F8A;
+    font-size: 18px;
+}
+
+.pagination_item:hover {
     cursor: pointer;
 }
