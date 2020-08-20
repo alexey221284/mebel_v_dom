@@ -2055,14 +2055,15 @@ input[type=checkbox] {
 .text_wrap {
     position: absolute;
     width: 100%;
-    height: 100px;
-    left: 35px;
+    height: 100%;
     top: 0;
+    left: 0;
 }
 
 .about_text_news {
     position: relative;
     margin-top: 20px;
+    left: 35px;
     font-family: Proxima Nova;
     font-style: normal;
     font-weight: normal;
@@ -2074,7 +2075,8 @@ input[type=checkbox] {
 
 .about_text_date {
     position: relative;    
-    margin-top: 108px;
+    margin-top: 165px;
+    left: 35px;
     font-family: Proxima Nova;
     font-style: normal;
     font-weight: 600;
@@ -2087,6 +2089,7 @@ input[type=checkbox] {
 .about_text_desc {
     position: relative;
     margin-top: 10px;
+    left: 35px;
     font-family: Proxima Nova;
     font-style: normal;
     font-weight: 600;
@@ -2101,6 +2104,7 @@ input[type=checkbox] {
 }
 
 .about_foto_podr p {
+    position: relative;
     font-family: Proxima Nova;
     font-style: normal;
     font-weight: normal;
@@ -2110,6 +2114,7 @@ input[type=checkbox] {
 }
 
 .about_foto_podr img {
+    position: relative;
     margin-left: 7px;
     z-index: 1;    
 }
@@ -2119,11 +2124,14 @@ input[type=checkbox] {
 }
 
 .about_item:hover .about_foto_podr {
+    position: relative;
     display: initial;
     display: flex;
     flex-direction: row;
-    margin-left: 55px;
-    margin-top: 83px;
+    justify-content: center;
+    /*align-items: center;*/
+    margin-top: 35%;
+    left: 20px;
 }
 
 .about_item:hover .about_text_date {
@@ -2168,7 +2176,7 @@ input[type=checkbox] {
 }
 
 .about_item {
-    margin-bottom: 19px;
+    margin-bottom: 19px;    
 }
 
 /************* Mobile Version**************/
@@ -2305,5 +2313,9 @@ input[type=checkbox] {
         margin-left: 10px;
         display: flex;
         flex-direction: column;
-    }    
+    }
+
+    .about_item >img{
+        width: 100%;   
+    }
 }
