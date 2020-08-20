@@ -10,6 +10,10 @@ a, a:visited, a:hover, a:focus, .grey {
     color: #A6A6A6;
 }
 
+input[type=checkbox] {
+    display: none;
+}
+
 .breadcrumbs_block {
     margin-top: 40px;
 }
