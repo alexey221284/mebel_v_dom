@@ -1967,7 +1967,7 @@ input[type=checkbox] {
 }
 
 .about-news_line {
-    margin-bottom: 75px;
+    margin-bottom: 0;
 }
 
 .about_filter p {
@@ -1989,9 +1989,9 @@ input[type=checkbox] {
     color: #444444;
 }
 
-/*.about_filter label:hover {
+.about_filter label:hover {
     cursor: pointer;
-}*/
+}
 
 .about_filter form {
     margin-top: 28px;
@@ -2051,10 +2051,18 @@ input[type=checkbox] {
 
 /* end custom checkbox*/
 
-.about_text_news {
+
+.text_wrap {
     position: absolute;
-    margin-top: -240px;
-    margin-left: 20px;
+    width: 100%;
+    height: 100px;
+    left: 35px;
+    top: 0;
+}
+
+.about_text_news {
+    position: relative;
+    margin-top: 20px;
     font-family: Proxima Nova;
     font-style: normal;
     font-weight: normal;
@@ -2065,9 +2073,8 @@ input[type=checkbox] {
 }
 
 .about_text_date {
-    position: absolute;    
-    margin-top: -115px;
-    margin-left: 20px;
+    position: relative;    
+    margin-top: 108px;
     font-family: Proxima Nova;
     font-style: normal;
     font-weight: 600;
@@ -2078,14 +2085,15 @@ input[type=checkbox] {
 }
 
 .about_text_desc {
-    margin-top: -90px;
-    margin-left: 20px;
+    position: relative;
+    margin-top: 10px;
     font-family: Proxima Nova;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
     color: #FFFFFF;
+    max-width: 240px;
 }
 
 .about_foto_podr {
@@ -2110,12 +2118,12 @@ input[type=checkbox] {
     cursor: pointer;
 }
 
-.about_item:hover div {
+.about_item:hover .about_foto_podr {
     display: initial;
     display: flex;
     flex-direction: row;
-    margin-left: 74px;
-    margin-top: -140px;
+    margin-left: 55px;
+    margin-top: 83px;
 }
 
 .about_item:hover .about_text_date {
@@ -2157,6 +2165,10 @@ input[type=checkbox] {
 
 .pagination_item:hover {
     cursor: pointer;
+}
+
+.about_item {
+    margin-bottom: 19px;
 }
 
 /************* Mobile Version**************/
@@ -2293,17 +2305,5 @@ input[type=checkbox] {
         margin-left: 10px;
         display: flex;
         flex-direction: column;
-    }
-
-    .about_item img {
-        width: 95%;
-        margin-left: 10px;
-        margin-top: 75px;
-    }
-
-    .about_foto_podr img {
-        width: auto;
-        margin-top: 0;    
-    }
-
+    }    
 }
