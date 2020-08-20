@@ -1985,13 +1985,67 @@ a, a:visited, a:hover, a:focus, .grey {
     color: #444444;
 }
 
-.about_filter label:hover {
+/*.about_filter label:hover {
     cursor: pointer;
-}
+}*/
 
 .about_filter form {
     margin-top: 28px;
 }
+
+
+/*custom checkbox*/
+
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #A6A6A6;
+    border-radius: 1px;
+    margin-right: 7.5px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.custom-checkbox:checked+label::before {
+    border-color: #444444;
+    background-color: #444444;
+    background-image: url(../img/checkbox_icon.svg);
+  }
+
+  /* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #A6A6A6;
+  }
+  /* стили для активного состояния чекбокса (при нажатии на него) */
+  .custom-checkbox:not(:disabled):active+label::before {
+    background-color: #444444;
+    border-color: #444444;
+  }
+  /* стили для чекбокса, находящегося в фокусе */
+  .custom-checkbox:focus+label::before {
+    box-shadow: 0 0 0 0.1rem #807878;
+  }
+  /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+  .custom-checkbox:focus:not(:checked)+label::before {
+    border-color: #A6A6A6;
+  }
+  /* стили для чекбокса, находящегося в состоянии disabled */
+  .custom-checkbox:disabled+label::before {
+    background-color: #e9ecef;
+  }
+
+/* end custom checkbox*/
 
 .about_text_news {
     position: absolute;
@@ -2016,7 +2070,7 @@ a, a:visited, a:hover, a:focus, .grey {
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #FFFFFF;    
 }
 
 .about_text_desc {
