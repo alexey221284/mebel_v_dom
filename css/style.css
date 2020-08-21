@@ -2075,7 +2075,7 @@ input[type=checkbox] {
 
 .about_text_date {
     position: relative;    
-    margin-top: 165px;
+    margin-top: 108px;
     left: 35px;
     font-family: Proxima Nova;
     font-style: normal;
@@ -2129,9 +2129,8 @@ input[type=checkbox] {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /*align-items: center;*/
-    margin-top: 35%;
-    left: 20px;
+    margin-top: 83px;
+    left: 0;
 }
 
 .about_item:hover .about_text_date {
@@ -2317,5 +2316,28 @@ input[type=checkbox] {
 
     .about_item >img{
         width: 100%;   
+    }
+
+    .about_item:hover .about_foto_podr {
+        position: relative;
+        display: initial;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 35%;
+        left: 0;
+    }
+
+    .about_text_date {
+        position: relative;    
+        margin-top: 45%;
+        left: 35px;
+        font-family: Proxima Nova;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        color: #FFFFFF;    
     }
 }
