@@ -316,39 +316,61 @@
             <input type="radio" id="region" name="region" value="region"><label for="region">Доставка по области</label>
             <p class="cart_block_minitext">в радиусе 500 км. от г. Саратов</p>
           </div>
+          
+            <div class="cart_cityadress">
+              <label for="select_city">Город</label>
+              <select id="select_city">
+                  <option value="1">Энгельс</option>
+                  <option value="2">Саратов</option>
+              </select>
+            </div>
+            
 
-          <div>
-            <label for="select_city">Город</label><select id="select_city">
-              <option value="1">Энгельс</option>
-              <option value="2">Саратов</option>
-            </select>
             <div class="cart_adress">
-              <label for="street">Адрес</label><input type="text" placeholder="Улица" id="street"> 
+              <div class="cart_adress_street">
+                <label for="street">Адрес</label>
+                <input type="text" placeholder="Улица" id="street">
+              </div>
+               
               <div class="cart_input_block">
                 <input type="text" placeholder="Дом" id="dom">
                 <input type="text" placeholder="Квартира" id="apart">
-              </div>             
-              
+              </div>              
             </div>
 
             <div class="cart_data">
               <p class="cart_uppertext">Данные получателя:</p>
-              <label for="fio">Ваше ФИО</label><input type="text" placeholder="" id="fio">
-              <label for="mail">E-mail</label><input type="text" placeholder="" id="mail">
-              <label for="phone">Телефон</label><input type="text" placeholder="" id="phone">
-            </div>            
-          </div>
+              <div class="cart_data_fio">
+                <label for="fio">Ваше ФИО</label><input type="text" placeholder="" id="fio">
+              </div>
+              <div class="cart_data_mail">
+                <label for="mail">E-mail</label><input type="text" placeholder="" id="mail">
+              </div>
+              <div class="cart_data_phone">
+                <label for="phone">Телефон</label><input type="text" placeholder="" id="phone">
+              </div>              
+            </div>         
 
         </div>
 
         <div class="col-xl-6 cart_block_right">
 
           <div class="cart_block_pay">
-            <p class="cart_uppertext">Способ оплаты:</p>          
-            <input type="radio" id="cash" name="cash" value="cash"><label for="cash">Наличные</label>            
-            <input type="radio" id="online" name="online" value="online"><label for="online">Оплата онлайн</label>
-            <input type="radio" id="credit" name="credit" value="credit"><label for="credit">Кредит или рассрочка</label>            
-            <input type="radio" id="account" name="region" value="account"><label for="account">Выставить счёт</label>            
+            <p class="cart_uppertext">Способ оплаты:</p>
+
+            <div class="cart_block_pay0">
+              <div class="cart_block_pay1">
+                <input type="radio" id="cash" name="cash" value="cash"><label for="cash">Наличные</label>            
+                <input type="radio" id="online" name="online" value="online"><label for="online">Оплата онлайн</label>
+              </div> 
+              
+              <div class="cart_block_pay2">
+                <input type="radio" id="credit" name="credit" value="credit"><label for="credit">Кредит или рассрочка</label>            
+                <input type="radio" id="account" name="account" value="account"><label for="account">Выставить счёт</label>
+              </div>
+            </div>
+            
+            
           </div>
 
           <div class="cart_block_comment">
@@ -356,13 +378,13 @@
             <textarea name="comment" id="comment"></textarea>        
           </div>
 
-          <div>
-            <div>
-              <p>Итого: <span>48 450 <i class="fas fa-ruble-sign"></i></span></p>
-              <p>2 товара на сумму: 48 450 <i class="fas fa-ruble-sign"></i></p>
-              <p>Доставка: 20 ₽/км</p>
-              <button>Сделать заказ</button>
-              <p>Нажимая кнопку «Сделать заказ», я соглашаюсь с <a href="#">Политикой конфиденциальности</a></p>
+          <div class="cart_final_wrapper">
+            <div class="cart_final">
+              <p class="cart_final_total">Итого: <span>50 000 <i class="fas fa-ruble-sign"></i></span></p>
+              <p class="cart_final_prodtotal">2 товара на сумму: 48 450 <i class="fas fa-ruble-sign"></i></p>
+              <p class="cart_final_deliv">Доставка: 20 ₽/км</p>
+              <button class="cart_final_btn">Сделать заказ</button>
+              <p class="cart_final_polit">Нажимая кнопку «Сделать заказ», я соглашаюсь с <a href="#">Политикой конфиденциальности</a></p>
             </div>            
           </div>
 
