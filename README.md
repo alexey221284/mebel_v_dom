@@ -13,3 +13,5 @@ https://alexey221284.github.io/mebel_v_dom/about-news.html
 https://alexey221284.github.io/mebel_v_dom/about-company.html
 
 https://alexey221284.github.io/mebel_v_dom/cart.html
+
+https://alexey221284.github.io/mebel_v_dom/catalog.html
