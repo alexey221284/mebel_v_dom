@@ -172,7 +172,7 @@
         <div class="row">
           <div class="col-xl-12">
             <div class="breadcrumbs_block">
-              <span class="breadcrumbs_text">Главная\ Каталог </span>
+              <span class="breadcrumbs_text">Главная\ <span class="breadcrumbs_active">Каталог</span></span>
             </div>
           </div>
         </div>
@@ -184,19 +184,19 @@
     <div class="row">
       <div class="col-xl-12">
         <div class="idea-tabs">
-          <a href="index.html#" class="idea-tab">Для загородного дома </a>
-          <a href="index.html#" class="idea-tab">Мебель эконом класса </a>
-          <a href="index.html#" class="idea-tab">Для офиса </a>
-          <a href="index.html#" class="idea-tab">Для молодой семьи </a>
-          <a href="index.html#" class="idea-tab">Для бара </a>
-          <a href="index.html#" class="idea-tab">Мебель из дерева </a>
-          <a href="index.html#" class="idea-tab">Для квартиры </a>
-          <a href="index.html#" class="idea-tab">Мебель премиум-класса </a>
-          <a href="index.html#" class="idea-tab">Для дачи </a>
-          <a href="index.html#" class="idea-tab">Для детей </a>
-          <a href="index.html#" class="idea-tab">Мебель от дизайнеров </a>
-          <a href="index.html#" class="idea-tab">Коллекции </a>
-          <a href="index.html#" class="idea-tab">По цветам</a>
+          <a href="#" class="idea-tab"><span class="active_menu">Для загородного дома</span></a>
+          <a href="#" class="idea-tab">Мебель эконом класса </a>
+          <a href="#" class="idea-tab">Для офиса </a>
+          <a href="#" class="idea-tab">Для молодой семьи </a>
+          <a href="#" class="idea-tab">Для бара </a>
+          <a href="#" class="idea-tab">Мебель из дерева </a>
+          <a href="#" class="idea-tab">Для квартиры </a>
+          <a href="#" class="idea-tab">Мебель премиум-класса </a>
+          <a href="#" class="idea-tab">Для дачи </a>
+          <a href="#" class="idea-tab">Для детей </a>
+          <a href="#" class="idea-tab">Мебель от дизайнеров </a>
+          <a href="#" class="idea-tab">Коллекции </a>
+          <a href="#" class="idea-tab">По цветам</a>
         </div>
 
         <!--<div class="idea-tabs__info">
@@ -213,13 +213,13 @@
     <div class="main_catalog">
       <div class="container">
         <div class="row">
-          <div class="col-xl-3">
+          <div class="col-xl-3 col-12">
             <div class="main_catalog_item_wrap">
               <p class="main_catalog_title">Каталог</p>
               <p class="main_catalog_item">Столы</p>
               <p class="main_catalog_item">Стулья</p>
               <div class="main_catalog_subitem_wrap">
-                <p class="main_catalog_subitem">Деревянные</p>
+                <p class="main_catalog_subitem_active">Деревянные</p>
                 <p class="main_catalog_subitem">Металлокаркас</p>
                 <p class="main_catalog_subitem">На дуге</p>
                 <p class="main_catalog_subitem">Дизайнерские стулья</p>
@@ -234,25 +234,27 @@
             </div>
 
             <div>
-              <div class="filter-range">
-                <div class="filter-range-title">Сортировать по цене</div>
-                  <div class="price-controls">
-                    <label class="min-price"><input type="text" name="min-price" value="500"></label>
-                    <label class="max-price"><input type="text" name="max-price" value="20000"></label>
+              
+              <div class="about_filter catalog_filter_category">
+                <p>Сортировать по цене</p>
+                <div class='multi-range' data-lbound='500' data-ubound='20000'>
+                  <div class='multi-range2' data-ubound='20000'>
+                    <input class="tochka2" type='range' 
+                         min='500' max='40000' step='10' value='20000' 
+                         oninput='this.parentNode.dataset.ubound=this.value;'/>
                   </div>
-                  <div class="range-controls">
-                    <div class="scale">
-                      <div class="bar"></div>
-                    </div>
-                    <div class="range-toggle range-toggle-min"></div>
-                    <div class="range-toggle range-toggle-max"></div>
-                  </div>
+                  <hr />
+                  <input type='range' 
+                         min='500' max='40000' step='10' value='500' 
+                         oninput='this.parentNode.dataset.lbound=this.value;'/>                  
                 </div>
 
                 <div class="catalog_radioblock1">
                   <label for="lowprice"><input type="radio" name="lowprice" id="lowprice">Сначала дешевые</label>
                   <label for="highprice"><input type="radio" name="highprice" id="highprice">Сначала дорогие</label>
                 </div>
+              </div>
+                
                 
             </div>
 
@@ -279,11 +281,12 @@
 
           </div>
 
-          <div class="col-xl-9 row">
+          <div class="col-xl-9 col-12 row">
 
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-6 catalog_item">              
               <div class="similar_products_item_wrapper">
-                <div class="catalog_img_wrapper">
+                <div class="glumarko_wrapper"><div class="glumarko g_hit"><span>Хит</span></div></div>
+                  <div class="catalog_img_wrapper">                  
                   <img class="similar_products_item_wrapper_img" src="img/product_img_stol.png">
                 </div>                
                 <div class="similar_products_item_footer">
@@ -299,7 +302,7 @@
               </div>  
             </div>
 
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-6 catalog_item">
               <div class="similar_products_item_wrapper">
                 <div class="catalog_img_wrapper">
                   <img class="similar_products_item_wrapper_img" src="img/product_img_stulkapri.png">
@@ -317,7 +320,7 @@
               </div>
             </div>
 
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-6 catalog_item">
               <div class="similar_products_item_wrapper">
                 <div class="catalog_img_wrapper">
                   <img class="similar_products_item_wrapper_img" src="img/product_stul58.png">
@@ -335,8 +338,9 @@
               </div>
             </div>
 
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-6 catalog_item">
               <div class="similar_products_item_wrapper">
+                <div class="glumarko_wrapper"><div class="glumarko g_new"><span class="black">New</span></div></div>
                 <div class="catalog_img_wrapper">
                   <img class="similar_products_item_wrapper_img" src="img/similar_img.png">
                 </div>                
@@ -353,7 +357,7 @@
               </div>  
             </div>
 
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-6 catalog_item">
               <div class="similar_products_item_wrapper">
                 <div class="catalog_img_wrapper">
                   <img class="similar_products_item_wrapper_img" src="img/product_img_stulkapri.png">
@@ -371,7 +375,7 @@
               </div>
             </div>
 
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-6 catalog_item">
               <div class="similar_products_item_wrapper">
                 <div class="catalog_img_wrapper">
                   <img class="similar_products_item_wrapper_img" src="img/product_stul58.png">
@@ -389,8 +393,9 @@
               </div>
             </div>
 
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-6 catalog_item">
               <div class="similar_products_item_wrapper">
+                <div class="glumarko_wrapper"><div class="glumarko g_sale"><span>Sale</span></div></div>
                 <div class="catalog_img_wrapper">
                   <img class="similar_products_item_wrapper_img" src="img/similar_img.png">
                 </div>                
@@ -407,7 +412,7 @@
               </div>  
             </div>
 
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-6 catalog_item">
               <div class="similar_products_item_wrapper">
                 <div class="catalog_img_wrapper">
                   <img class="similar_products_item_wrapper_img" src="img/product_img_stulkapri.png">
@@ -425,7 +430,7 @@
               </div>
             </div>
 
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-6 catalog_item">
               <div class="similar_products_item_wrapper">
                 <div class="catalog_img_wrapper">
                   <img class="similar_products_item_wrapper_img" src="img/product_stul58.png">
@@ -465,16 +470,9 @@
           </div>
         </div>
         
-      </div>
-
-      
+      </div>     
 
     </div>
-
-    
-
-
-    
     
 
 
